@@ -9,3 +9,8 @@ if(! function_exists('page_title')){
 			return $title.' | '.$baseTitle;
 	}
 }
+if(! function_exists('activePage')){
+	function activePage($route) {
+		return Route::is($route)?'active':'';
+	}
+}

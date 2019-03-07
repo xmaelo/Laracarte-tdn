@@ -24,7 +24,7 @@
                 <li><a href="https://laravel-news.com">Laravel News</a></li>
                 <li><a href="https://larachat.io">Larachat</a></li>
               </ul>
-            <li><a href="">Contact</a></li>
+            <li class="{{activePage('contact_path')}}"><a href="{{route('contact_path')}}" >Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="">Login</a></li>

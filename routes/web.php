@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Mail\OrderShippe;
 
 Route::get('/', 
 	[
@@ -26,3 +27,10 @@ Route::get('/contact',
 		'as' => 'contact_path',
 		'uses' => 'ContactsController@create'
 	]);
+Route::post('/contact',
+	[  
+		'as' => 'contact_path',
+		'uses' => 'ContactsController@store'
+	]);
+Route::get('/test-contact', 'ContactsController@store');
+

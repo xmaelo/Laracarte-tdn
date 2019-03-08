@@ -22,6 +22,7 @@
 </head>
 
 <body>
+@include('flashy::message')
 @include('layouts.partials._nav')
 @yield('content')
 @include('layouts.partials._footer')

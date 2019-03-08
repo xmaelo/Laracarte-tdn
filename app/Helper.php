@@ -14,3 +14,10 @@ if(! function_exists('activePage')){
 		return Route::is($route)?'active':'';
 	}
 }
+
+if(!function_exists('flashing')){
+	function flashing ($message){
+		    session()->flash('notification.message', $message);
+       
+	}
+}
